@@ -1,0 +1,13 @@
+2024-03-01 08:00:00 INFO [app.server] starting up
+2024-03-01 08:00:01 INFO [app.db] connecting to postgres://db.internal:5432
+2024-03-01 08:00:02 ERROR [app.db] connection refused to 10.0.0.5:5432
+2024-03-01 08:00:02 ERROR [app.db] connection refused to 10.0.0.6:5432
+2024-03-01 08:00:03 WARN [app.cache] cache miss ratio 0.42 above threshold
+2024-03-01 08:00:04 ERROR [app.http] request to /api/users/42 failed with status 500
+2024-03-01 08:00:04 ERROR [app.http] request to /api/orders/7 failed with status 500
+    at handler.py:88 in dispatch
+    at server.py:12 in serve
+2024-03-01 08:00:05 ERROR [app.http] request to /api/items/13 failed with status 500
+2024-03-01 08:00:06 CRITICAL [app.core] out of memory, killing worker 3
+2024-03-01 08:00:07 ERROR [app.db] timeout after 30s on 10.0.0.5
+2024-03-01 08:00:08 ERROR [app.db] timeout after 45s on 10.0.0.7
